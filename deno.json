@@ -5,6 +5,9 @@
   "exports": {
     ".": "./lib/mod.ts"
   },
+  "tasks": {
+    "test": "deno test"
+  },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
   }
