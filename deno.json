@@ -1,6 +1,6 @@
 {
   "name": "@ppz/ppz",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Unlicense",
   "exports": {
     ".": "./lib/mod.ts"

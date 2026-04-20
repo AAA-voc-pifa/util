@@ -13,6 +13,12 @@ function is_real_str(s: unknown): s is string {
 }
 
 export
+function is_email(email: string): boolean {
+	const re = /^(?!\.)(?!.*\.\.)([a-z0-9_'+\-\.]*)[a-z0-9_+-]@([a-z0-9][a-z0-9\-]*\.)+[a-z]{2,}$/i
+	return re.test(email)
+}
+
+export
 function dont_throw<T>(job: () => T): I_result<T, unknown> {
 	try {
 		return { ok: true, value: job() }
