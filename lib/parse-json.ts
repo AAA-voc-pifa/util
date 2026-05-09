@@ -9,7 +9,9 @@ type I_json_value =
 	| null
 	| I_json_obj
 	| I_json_array
+export
 type I_json_obj = { [key: string]: I_json_value }
+export
 type I_json_array = I_json_value[]
 
 export
